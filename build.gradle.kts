@@ -21,8 +21,8 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(module = "junit")
 		exclude(module = "mockito-core")
@@ -31,7 +31,6 @@ dependencies {
 	testCompile("org.spekframework.spek2:spek-dsl-jvm:2.0.5")
 	testCompile("org.spekframework.spek2:spek-runner-junit5:2.0.5")
 
-	testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
 	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.3.1")
 }
 
